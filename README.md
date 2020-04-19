@@ -1,7 +1,7 @@
 # hugo-theme-purexs
 
 A port of [hexo-theme-pure](https://github.com/cofess/hexo-theme-pure) for Hugo. 
-Forked from [hugo-theme-purexs](https://github.com/xiaoheiAh/hugo-theme-purexs).
+Forked from [hugo-theme-purexs](https://github.com/xiaoheiAh/hugo-theme-pure).
 Powerful & Clean. [Iconfont](http://blog.cofess.com/hexo-theme-pure/iconfont/demo_fontclass.html)
 
 ## Contribute
@@ -26,10 +26,6 @@ The file structure of `repo` is roughly referred to [hexo-theme-pure](https://gi
    \end{cases}
    $$
    ```
-
-     <img src="https://raw.githubusercontent.com/ranaparth/imgs/master/20191121103534.png" alt="not-set-mmark" style="zoom:50%;" />
-   <img src="https://raw.githubusercontent.com/ranaparth/imgs/master/20191121104118.png" alt="set-mmark" style="zoom:50%;" />
-
 3. [2019-12-07] beautify toc by [tocbot](https://github.com/tscanlin/tocbot/)
 
 4. [2019-12-24] support pagination
@@ -55,22 +51,14 @@ The file structure of `repo` is roughly referred to [hexo-theme-pure](https://gi
 
 ## Screenshots
 
-![](https://raw.githubusercontent.com/ranaparth/hugo-theme-purexs/master/images/grey.png)
-
 ![](https://raw.githubusercontent.com/ranaparth/hugo-theme-purexs/master/images/black.png)
-
-![](https://raw.githubusercontent.com/ranaparth/hugo-theme-purexs/master/images/blue.png)
-
-![](https://raw.githubusercontent.com/ranaparth/hugo-theme-purexs/master/images/green.png)
-
-![](https://raw.githubusercontent.com/ranaparth/hugo-theme-purexs/master/images/purple.png)
 
 ## Installation
 
 ```bash
 $ cd $HUGO_ROOT
-$ git clone https://github.com/ranaparth/hugo-theme-purexs themes/purex
-$ ./hugo server -t pure
+$ git clone https://github.com/ranaparth/hugo-theme-purexs themes/purexs
+$ hugo server -t purexs
 ```
 
 ### **Note** 
@@ -78,18 +66,6 @@ $ ./hugo server -t pure
 1. Please copy the config.yml under the `exampleSite` folder to the root folder of your Hugo Site. Feel free to change it. If you don't like `.yml` file, you can also convert it to you want.
 
 2. Your post should under the `posts` folder, like this : `hugo new posts/any.md`
-
-## Multilingual
-
-Translations are collected from the [`themes/even/i18n/`](https://github.com/olOwOlo/hugo-theme-even/tree/master/i18n) folder (built into the theme), as well as present in `i18n` at your root of project.
-
-You can specify `defaultContentLanguage` to use translations.
-
-```yml
-defaultContentLanguage: zh # en,fr...
-```
-
-Currently supports English and Chinese, you can see `en.yml` and `zh.yml` under `pure/i18n`. If you want to support other language, you can copy any yml file under `i18n` and rename to new language, then feel free to translate.
 
 ## Favicon & Images
 
@@ -114,20 +90,12 @@ menuIcons:
 
 ## TOC
 
-enable toc 
+You can enable toc 
 
 ```yml
-  # config
   config:
     toc: true
 ```
-
-
-
-## TODO
-
-- [x] TOC
-- [x] pagination
 
 ## License
 
@@ -136,8 +104,8 @@ Released under the [MIT](https://github.com/olOwOlo/hugo-theme-even/blob/master/
 ## Acknowledgements
 
 - [hexo-theme-pure](https://github.com/cofess/hexo-theme-pure)
-
 - [hugo-theme-even](https://github.com/olOwOlo/hugo-theme-even)
+- [hugo-theme-purexs](https://github.com/xiaoheiAh/hugo-theme-pure)
 
   
 
