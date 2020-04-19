@@ -1,11 +1,11 @@
 # theme.toml template for a Hugo theme
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
-name = "Hugo Theme Pure"
+name = "Hugo Theme Pure XS"
 license = "MIT"
-licenselink = "https://github.com/xiaoheiAh/hugo-theme-pure/blob/master/LICENSE"
+licenselink = "https://github.com/ranaparth/hugo-theme-purexs/blob/master/LICENSE"
 description = "A powerful and pure theme for hugo~enjoy~"
-homepage = "https://xiaohei.im/"
+homepage = "https://ranaparth.github.io/"
 tags = [
   "blog",
   "clean",
@@ -14,12 +14,20 @@ tags = [
   "white",
   "search"
 ]
-features = []
+features = [
+  "blog",
+  "search",
+  "tags",
+  "categories",
+  "about"
+]
 min_version = "0.57.2"
 
-[author]
-name = "xiaoheiah"
-homepage = "https://xiaohei.im"
+# If the theme has multiple authors
+authors = [
+  {name = "xiaoheiah", homepage = "https://xiaohei.im"},
+  {name = "ranaparth", homepage = "https://ranaparth.github.io"}
+]
 
 [original]
 name = "hexo-theme-pure"
