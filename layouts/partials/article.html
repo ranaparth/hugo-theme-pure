@@ -8,17 +8,26 @@
       {{ .Scratch.Set "class_name" "article-title" }}
       {{- partial "post/title.html" . }}
       {{- end }}
-      <div class="article-meta">
-        {{ .Scratch.Set "class_name" "article-date" }}
-        {{- partial "post/date.html" . }}
-        {{- partial "post/category.html" . }}
-        {{- partial "post/tag.html" . }}
-        {{- partial "post/pv.html" . }}
-        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="{{ .RelPermalink }}#comments"
-            class="article-comment-link">{{T "article_comments" }}</a></span>
-        {{- partial "post/wc.html" . }}
-      </div>
     </div>
+    {{- if .Description }}
+    <div class="article-entry text-muted" itemprop="description">
+      {{- .Description -}}
+    </div>
+    {{ else if .Summary }}
+    <div class="article-entry text-muted" itemprop="description">
+      {{ .Summary }}
+    </div>
+    {{- end }}
+    <p class="article-meta">
+      {{ .Scratch.Set "class_name" "article-date" }}
+      {{- partial "post/date.html" . }}
+      <!-- {{- partial "post/category.html" . }} -->
+      {{- partial "post/tag.html" . }}
+      <!-- {{- partial "post/pv.html" . }} -->
+      <!-- <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="{{ .RelPermalink }}#comments" -->
+          <!-- class="article-comment-link">{{T "article_comments" }}</a></span> -->
+      {{- partial "post/wc.html" . }}
+    </p>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
       {{ .Content }}
     </div>

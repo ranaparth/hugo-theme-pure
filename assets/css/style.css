@@ -408,8 +408,8 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 21px;
-  margin-bottom: 10.5px;
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
 }
 
 h1 small,
@@ -4747,7 +4747,7 @@ a.label:focus {
   -webkit-line-clamp: 2;
   font-size: 18px;
   line-height: 32px;
-  height: 64px;
+  height: 32px;
   word-break: break-all !important;
   word-wrap: break-word !important;
 }
@@ -6529,6 +6529,11 @@ body.no-sidebar .sidebar {
   font-size: 18px;
 }
 
+.article-tag-link {
+  text-decoration:underline;
+  text-decoration-style: dotted;
+}
+
 .article-toc .toc-title {
   font-size: 18px;
   color: #000;
@@ -6651,7 +6656,7 @@ body.okayNav-loaded {
 
 .okayNav ul li {
   display: inline-block;
-  margin-left: 15px;
+  margin-right: 10px;
 }
 
 .okayNav a {
@@ -6670,12 +6675,12 @@ body.okayNav-loaded {
 
 .okayNav__nav--visible li {
   display: inline-block;
-  margin-left: 15px;
+  margin-right: 10px;
 }
 
-.okayNav__nav--visible li:first-child {
+/* .okayNav__nav--visible li:first-child {
   margin-left: 15px;
-}
+} */
 
 .okayNav__nav--visible a {
   /* Link styling for the visible part of the nav */

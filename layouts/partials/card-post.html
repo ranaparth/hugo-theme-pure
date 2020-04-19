@@ -5,8 +5,17 @@
                 itemprop="datePublished">{{- .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="{{- .Permalink }}">{{- .Title }}</a>
+            <a class="article-link" href="{{- .Permalink }}"></a>{{- .Title }}</a>
         </h3>
+        {{- if .Description }}
+        <div class="article-entry text-muted" itemprop="description">
+            {{- .Description -}}
+        </div>
+        {{ else if .Summary }}
+        <div class="article-entry text-muted" itemprop="description">
+            {{ .Summary }}
+        </div>
+        {{- end }}
     </div>
     {{- with .Params.tags }}
     <div class="panel-footer">

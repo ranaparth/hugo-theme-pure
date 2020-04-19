@@ -16,11 +16,13 @@
         </header>
         <!-- /header -->
         <div class="article-body">
+            <div class="row">
             {{- range .Pages }}
             <div class="col-md-6">
                 {{- partial "card-post.html" . }}
             </div>
             {{- end }}
+            </div>
         </div>
     </article>
 </main>
